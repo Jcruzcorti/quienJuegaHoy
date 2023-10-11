@@ -2,6 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
+import Link from 'next/link';
 
 
 
@@ -18,9 +19,8 @@ export default function ButtonTest() {
       }}
     >
       <ButtonGroup variant="outlined" aria-label="outlined button group" size="large" color="primary">
-        <Button href="/matchToday">HOY</Button>
-        <Button href="/matchTomorrow">MAÑANA</Button>
-        <Button href="/leagues">LIGAS</Button>
+        <Link href='/'><Button>HOY</Button></Link>
+        <Link href='/manana'><Button>MAÑANA</Button></Link>
       </ButtonGroup>
     </Box>
   );

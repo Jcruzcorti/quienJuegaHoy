@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <ButtonTest/>
-      {/* <AppBarNav/> */}
+      <h2>BIENVENIDOS A QUIEN JUEGA HOY</h2>
     </main>
   )
 }

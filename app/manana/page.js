@@ -2,13 +2,13 @@ import React from 'react'
 import styles from '../page.module.css'
 import ButtonTest from '@/components/buttons/ButtonTest';
 
-function Leagues() {
+function MatchTomorrow() {
   return (
-    <main className={styles.main}>
+    <main className={styles.mainNavigation}>
       <ButtonTest/>
-       <h1>Leagues</h1>
+      <h2>Match Tomorrow</h2>
     </main>
   )
 }
 
-export default Leagues;
+export default MatchTomorrow;

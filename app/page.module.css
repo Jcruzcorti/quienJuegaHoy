@@ -1,9 +1,9 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 4rem;
+  padding: 0.5rem;
   min-height: 100vh;
   
 }
@@ -11,9 +11,9 @@
 .mainNavigation{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 4rem;
+  padding: 0.5rem;
   min-height: 100vh;
 }
 
