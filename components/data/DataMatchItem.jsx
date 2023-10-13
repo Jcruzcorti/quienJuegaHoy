@@ -1,21 +1,12 @@
-import { matchesMiddleware } from 'next/dist/shared/lib/router/router'
 import React from 'react'
 
-
-
-function DataMatchItem({data}) {
-
-
-
+function DataMatchItem({match}) {
   return (
     <>
-        {/* {Object.entries(data).map(([key, value])=>(
-            <div key={matchIds}>
-                <p>{matches}</p>
-            </div>
-        ))} */}
-
-        {JSON.stringify(data)}
+        <h3>{match.name}</h3>
+        <p>{match.venue}</p>
+        <p>{match.address}</p>
+        {/* <Image src={match.crest} width={20} height={20}/> */}
     </>
   )
 }
