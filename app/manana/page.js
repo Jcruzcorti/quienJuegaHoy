@@ -4,10 +4,14 @@ import ButtonTest from '@/components/buttons/ButtonTest';
 
 function MatchTomorrow() {
   return (
-    <main className={styles.mainNavigation}>
-      <ButtonTest/>
-      <h2>Match Tomorrow</h2>
-    </main>
+    <>        
+      <nav className={styles.nav}>
+        <ButtonTest/>
+      </nav>
+      <main className={styles.mainNavigation}>
+        <h2>Match Tomorrow</h2>
+      </main>
+    </>
   )
 }
 

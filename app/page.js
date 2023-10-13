@@ -6,10 +6,14 @@ import DataMatchListContainer from '@/components/data/DataMatchListContainer'
 
 export default function Home() {
   return (
-      <main className={styles.main}>
-        <ButtonTest/>
-        <h2>BIENVENIDOS A QUIEN JUEGA HOY</h2>
-        <DataMatchListContainer/>
-      </main>
+      <>
+        <nav className={styles.nav}>
+          <ButtonTest/>
+        </nav>
+        <main className={styles.main}>
+          {/* <h2>BIENVENIDOS A QUIEN JUEGA HOY</h2> */}
+          <DataMatchListContainer/>
+        </main>
+      </>
   )
 }
