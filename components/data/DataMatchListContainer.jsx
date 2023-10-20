@@ -2,13 +2,14 @@ import DataMatchList from "./DataMatchList"
 
 
 async function getData() {
-    const res = await fetch('http://api.football-data.org/v4/teams/2061',{
+    const res = await fetch('https://api.football-data.org/v4/matches?date',{
       headers: {
         "X-Auth-token": process.env.REACT_APP_PROYECT_API_ID
       }
     })
 
     // The return value is *not* serialized
+    https://api.football-data.org/v4/matches?date=YESTERDAY
     // You can return Date, Map, Set, etc.
    
     if (!res.ok) {
