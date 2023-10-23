@@ -2,7 +2,7 @@ import DataMatchList from "./DataMatchList"
 
 
 async function getData() {
-    const res = await fetch('https://api.football-data.org/v4/matches?date',{
+    const res = await fetch('https://api.football-data.org/v4/matches?matchday',{
       headers: {
         "X-Auth-token": process.env.REACT_APP_PROYECT_API_ID
       }
@@ -27,8 +27,8 @@ async function getData() {
     // const newData = Object.entries(data);
    
     return (
-        <main>
+        <>
             <DataMatchList newData={newData}/>
-        </main>
+        </>
     ) 
   }

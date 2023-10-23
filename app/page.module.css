@@ -29,6 +29,22 @@
 }
 
 
+.MatchContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 10px;
+}
+
+.MatchItem{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  gap: 10px;
+}
 
 /* .description {
   display: inherit;

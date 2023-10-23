@@ -1,6 +1,9 @@
+
+
 import React from 'react'
 import styles from '../../app/page.module.css'
 import { newDateArg } from '../date/DateArg';
+
 // import Image from 'next/image'
 
 function DataMatchItem({match}) {
@@ -10,7 +13,7 @@ function DataMatchItem({match}) {
     <>
 
       {match.matches.map((m=>(
-        <div key={m.id}>
+        <div key={m.id} className={styles.MatchItem}>
             <h3>{m.competition.name}</h3>
             <h2>{m.homeTeam.shortName}</h2> <h2>{m.score.fullTime.home}</h2>
             vs
@@ -27,5 +30,4 @@ function DataMatchItem({match}) {
 }
 
 export default DataMatchItem
-
 
