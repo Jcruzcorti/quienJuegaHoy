@@ -9,13 +9,16 @@ export default function Home() {
   return (
       <>
         <nav className={styles.nav}>
-          <ButtonTest/>
+            <ButtonTest/>
+          {/* <div className={styles.navInfo}> */}
+            <InformationAlert/>
+          {/* </div> */}
         </nav>
-        <main >
-          {/* <h2>BIENVENIDOS A QUIEN JUEGA HOY</h2> */}
-          <InformationAlert/>
-          <DataMatchListContainer/>
-        </main>
+          <main className={styles.main}>
+            <h1 className={styles.h1}>¿QUIEN JUEGA HOY?</h1>
+            {/* <InformationAlert/> */}
+            <DataMatchListContainer/>
+          </main>
       </>
   )
 }

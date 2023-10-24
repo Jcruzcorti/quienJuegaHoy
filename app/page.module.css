@@ -1,22 +1,34 @@
 
 .nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  gap: 50px;
+  /* width: 100%;
+  position: fixed;
+  z-index: 1; */
   /* min-height: 100vh; */
   
 }
+/* .navInfo{
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+} */
+
 
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-
-  min-height: 100vh;
-  
+  gap: 50px;
+  padding-top: 50px;
 }
 
 .mainNavigation{
@@ -25,26 +37,38 @@
   justify-content:center;
   align-items: center;
 
-  min-height: 100vh;
 }
 
+.h1{
+  padding-bottom: 50px;
+}
 
 .MatchContainer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  align-content: center;
+  align-items: baseline;
+  /* min-height: 100vh; */
   gap: 10px;
+  padding-bottom: 100px;
 }
 
 .MatchItem{
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content:space-evenly;
   align-items: center;
   gap: 10px;
+  
 }
+
+/* .InformationAlert{
+  display: flex;
+  flex-direction: row;
+  justify-content:end;
+  align-items: end;
+} */
 
 /* .description {
   display: inherit;
