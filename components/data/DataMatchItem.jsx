@@ -14,7 +14,7 @@ function DataMatchItem({match}) {
   return (
     <AosComponents>
 
-      {match.matches.map((m=>(
+      {match.map((m=>(
         <div key={m.id} className={styles.MatchItem} >
             {/* <Image src={m.area.crest} width={20} height={20} alt='Country flag'/> */}
             <h2>{newDateArg(m.utcDate)} hs</h2>
@@ -28,7 +28,6 @@ function DataMatchItem({match}) {
       )))}
         
         
-        {/* {JSON.stringify(match)} */}
     </AosComponents>
   )
 }

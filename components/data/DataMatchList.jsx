@@ -5,7 +5,8 @@ import DataMatchItem from './DataMatchItem'
 function DataMatchList({newData}) {
 
   return (
-    <>
+    
+    <> 
         {newData.map((match)=>(
             <div key={match.id}>
               <DataMatchItem match={match}/>
