@@ -5,6 +5,7 @@ import styles from '../../app/page.module.css'
 import { newDateArg } from '../date/DateArg';
 import Image from 'next/image'
 import AosComponents from '../aosComponents/AosComponents';
+import { Typography } from '@mui/material';
 
 
 function DataMatchItem({match}) {
@@ -16,10 +17,22 @@ function DataMatchItem({match}) {
 
       <div className={styles.MatchItem} >
             {/* <Image src={m.area.crest} width={20} height={20} alt='Country flag'/> */}
-            <h2>{newDateArg(match.utcDate)} hs</h2>
-            <h2>{match.homeTeam.shortName}</h2> 
+            <Typography variant="h6">
+              {newDateArg(match.utcDate)}hs
+            </Typography>
+            <Typography variant="h5" >
+            {match.homeTeam.shortName}
+            </Typography>
+            <Typography variant="h6" >
+            vs
+            </Typography>
+            <Typography variant="h5" >
+            {match.awayTeam.shortName}
+            </Typography>
+            {/* <h2>{newDateArg(match.utcDate)} hs</h2> */}
+            {/* <h2>{match.homeTeam.shortName}</h2> 
             <h3>vs</h3>        
-            <h2>{match.awayTeam.shortName}</h2> 
+            <h2>{match.awayTeam.shortName}</h2>  */}
             <Image src={match.area.flag} width={20} height={20} alt='Flag league'/>
       </div>         
         

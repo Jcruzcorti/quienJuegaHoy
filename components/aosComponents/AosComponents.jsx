@@ -8,8 +8,8 @@ export default function AosComponents({children}) {
 
     useEffect(() => {
         AOS.init({
-          delay: 100,
-          duration: 300,
+          delay:0,
+          duration: 400,
         });
       },[]);
 

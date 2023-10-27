@@ -15,7 +15,7 @@ export default function Home() {
           {/* </div> */}
         </nav>
           <main className={styles.main}>
-            <h1 className={styles.h1}>¿QUIEN JUEGA HOY?</h1>
+            {/* <h1 className={styles.h1}>¿QUIEN JUEGA HOY?</h1> */}
             {/* <InformationAlert/> */}
             <DataMatchListContainer/>
           </main>

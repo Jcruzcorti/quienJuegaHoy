@@ -40,7 +40,7 @@
 
 }
 
-.h1{
+.tittle{
   padding-bottom: 50px;
 }
 
@@ -51,7 +51,7 @@
   /* align-content:flex-start ; */
   align-items: flex-start;
 
-  gap: 10px;
+  gap: 6px;
 
 }
 
