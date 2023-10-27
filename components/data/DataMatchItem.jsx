@@ -12,21 +12,16 @@ function DataMatchItem({match}) {
 
 
   return (
-    <AosComponents>
+    <AosComponents >
 
-      {match.map((m=>(
-        <div key={m.id} className={styles.MatchItem} >
+      <div className={styles.MatchItem} >
             {/* <Image src={m.area.crest} width={20} height={20} alt='Country flag'/> */}
-            <h2>{newDateArg(m.utcDate)} hs</h2>
-            <h2>{m.homeTeam.shortName}</h2> 
-            <h3>vs</h3>
-            {/* <h2>{m.score.fullTime.home}</h2> */}          
-            <h2>{m.awayTeam.shortName}</h2> 
-            <h3>{m.area.code}</h3> 
-            {/* <Image src={m.area.crest} flag={20} height={20}/> */}
-        </div> 
-      )))}
-        
+            <h2>{newDateArg(match.utcDate)} hs</h2>
+            <h2>{match.homeTeam.shortName}</h2> 
+            <h3>vs</h3>        
+            <h2>{match.awayTeam.shortName}</h2> 
+            <Image src={match.area.flag} width={20} height={20} alt='Flag league'/>
+      </div>         
         
     </AosComponents>
   )

@@ -25,10 +25,11 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
   padding-top: 50px;
+  
 }
 
 .mainNavigation{
@@ -47,17 +48,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  align-items: baseline;
-  /* min-height: 100vh; */
+  /* align-content:flex-start ; */
+  align-items: flex-start;
+
   gap: 10px;
-  padding-bottom: 100px;
+
 }
 
 .MatchItem{
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content:center;
+  align-content: center;
   align-items: center;
   gap: 10px;
   
