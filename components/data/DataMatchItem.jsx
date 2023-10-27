@@ -11,22 +11,21 @@ import { Typography } from '@mui/material';
 function DataMatchItem({match}) {
 
 
-
   return (
     <AosComponents >
 
       <div className={styles.MatchItem} >
             {/* <Image src={m.area.crest} width={20} height={20} alt='Country flag'/> */}
-            <Typography variant="h6">
-              {newDateArg(match.utcDate)}hs
+            <Typography variant="h6" component="h6" pl={8}>
+              {newDateArg(match.utcDate)} hs
             </Typography>
-            <Typography variant="h5" >
+            <Typography variant="h5" component="h5">
             {match.homeTeam.shortName}
             </Typography>
-            <Typography variant="h6" >
+            <Typography variant="h6" component="h6">
             vs
             </Typography>
-            <Typography variant="h5" >
+            <Typography variant="h5" component="h5">
             {match.awayTeam.shortName}
             </Typography>
             {/* <h2>{newDateArg(match.utcDate)} hs</h2> */}

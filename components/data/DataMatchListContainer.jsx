@@ -43,6 +43,7 @@ async function getData() {
 
     const data = await getData()
       const leagues = [2021, 2001, 2015, 2002, 2019, 2014,2013, 2000, 2017, 2018]; 
+      
       const filteredMatch = data.matches.filter(match => leagues.includes(match.competition.id));     
 
     const newData = filteredMatch

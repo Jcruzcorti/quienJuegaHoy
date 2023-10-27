@@ -7,17 +7,26 @@ import { Typography } from '@mui/material'
 
 function DataMatchList({newData}) {
 
+   const emptyData = <Typography variant="h5" component="h5" pl={8}>
+                      No hay partidos disponibles hoy
+                    </Typography>
   return (
     
     <div className={styles.MatchContainer}>
-          <Typography variant="h3" className={styles.tittle}>
+      
+          <Typography variant="h3" component="h3" className={styles.tittle}>
             ¿QUIEN JUEGA HOY?
           </Typography> 
-        {newData.map((match)=>(
-            <div key={match.id} >
-              <DataMatchItem match={match}/>
-            </div>
-        ))}
+
+          {
+            newData
+            ?newData.map((match)=>(
+              <div key={match.id} >
+                <DataMatchItem match={match}/>
+              </div>
+          ))
+            :emptyData
+          }
 
         {/* {JSON.stringify(newData)} */}
     </div>
