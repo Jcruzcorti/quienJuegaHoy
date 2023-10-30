@@ -10,15 +10,11 @@ export default function Home() {
       <>
         <nav className={styles.nav}>
             <ButtonTest/>
-          {/* <div className={styles.navInfo}> */}
             <InformationAlert/>
-          {/* </div> */}
         </nav>
-          <main className={styles.main}>
-            {/* <h1 className={styles.h1}>¿QUIEN JUEGA HOY?</h1> */}
-            {/* <InformationAlert/> */}
+        <main className={styles.main}>
             <DataMatchListContainer/>
-          </main>
+        </main>
       </>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../page.module.css'
 import ButtonTest from '@/components/buttons/ButtonTest';
 import InformationAlert from '@/components/informationAlert/InformationAlert';
-import DataMatchListContainer from '@/components/data/DataMatchListContainer';
+import DataMatchListContainerTomorrow from '@/components/dataTomorrow/DataMatchListContainerTomorrow';
 
 function MatchTomorrow() {
 
@@ -14,8 +14,7 @@ function MatchTomorrow() {
         <InformationAlert/>
       </nav>
       <main className={styles.main}>
-        <h1 className={styles.h1}>¿QUIEN JUEGA MAÑANA?</h1>
-        <DataMatchListContainer/>
+        <DataMatchListContainerTomorrow/>
       </main>
     </>
   )

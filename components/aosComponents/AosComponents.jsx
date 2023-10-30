@@ -9,7 +9,7 @@ export default function AosComponents({children}) {
     useEffect(() => {
         AOS.init({
           delay:0,
-          duration: 400,
+          duration: 300,
         });
       },[]);
 

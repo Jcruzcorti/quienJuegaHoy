@@ -16,7 +16,7 @@ function DataMatchItem({match}) {
 
       <div className={styles.MatchItem} >
             {/* <Image src={m.area.crest} width={20} height={20} alt='Country flag'/> */}
-            <Typography variant="h6" component="h6" pl={8}>
+            <Typography variant="h6" component="h6" pl={7}>
               {newDateArg(match.utcDate)} hs
             </Typography>
             <Typography variant="h5" component="h5">
