@@ -15,23 +15,18 @@ function DataMatchItemTomorrow({match}) {
     <AosComponents >
 
       <div className={styles.MatchItem} >
-            {/* <Image src={m.area.crest} width={20} height={20} alt='Country flag'/> */}
-            <Typography variant="h6" component="h6" pl={13}>
+            <Typography variant="h6" component="h6" pl={8} className={styles.h6Date}>
               {newDateArg(match.utcDate)} hs
             </Typography>
-            <Typography variant="h5" component="h5">
-            {match.homeTeam.shortName}
+            <Typography variant="h5" component="h5" className={styles.h5Home}>
+              {match.homeTeam.shortName}
             </Typography>
-            <Typography variant="h6" component="h6">
-            vs
+            <Typography variant="h6" component="h6" className={styles.h6Vs}>
+              vs
             </Typography>
-            <Typography variant="h5" component="h5">
-            {match.awayTeam.shortName}
+            <Typography variant="h5" component="h5" className={styles.h5Away}>
+              {match.awayTeam.shortName}
             </Typography>
-            {/* <h2>{newDateArg(match.utcDate)} hs</h2> */}
-            {/* <h2>{match.homeTeam.shortName}</h2> 
-            <h3>vs</h3>        
-            <h2>{match.awayTeam.shortName}</h2>  */}
             <Image src={match.area.flag} width={20} height={20} alt='Flag league'/>
       </div>         
         
