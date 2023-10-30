@@ -3,8 +3,6 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 import Link from 'next/link';
-import InformationAlert from '../informationAlert/InformationAlert';
-import styles from '../../app/page.module.css'
 
 
 export default function ButtonTest() {
@@ -19,10 +17,9 @@ export default function ButtonTest() {
         },
       }}
     >
-      <ButtonGroup variant="outlined" aria-label="outlined button group" size="large" color="primary">
+      <ButtonGroup variant="outlined" aria-label="outlined button group" size="medium" color="primary">
         <Link href='/'><Button>HOY</Button></Link>
         <Link href='/manana'><Button>MAÑANA</Button></Link>
-        {/* <InformationAlert /> */}
       </ButtonGroup>
     </Box>
   );

@@ -27,7 +27,6 @@ function DataMatchListTomorrow({newData}) {
           :emptyData
         }
 
-        {/* {JSON.stringify(newData)} */}
       </div>
     
     </>

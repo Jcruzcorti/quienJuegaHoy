@@ -34,9 +34,6 @@ export default function InformationAlert() {
 
   return (
     <div>
-      {/* <Button variant="outlined" onClick={handleClickOpen}>
-        Ligas
-      </Button> */}
       <Fab color="info" aria-label="add" size="small"  onClick={handleClickOpen}>
       +
       </Fab>
@@ -60,7 +57,7 @@ export default function InformationAlert() {
         </DialogContent>
         <DialogActions>
 
-          <Button onClick={handleClose}>ENTIENDO</Button>
+          <Button onClick={handleClose} size="small">ENTIENDO</Button>
         </DialogActions>
       </Dialog>
     </div>

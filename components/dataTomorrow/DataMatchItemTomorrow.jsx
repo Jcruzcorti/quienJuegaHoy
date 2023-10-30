@@ -15,7 +15,7 @@ function DataMatchItemTomorrow({match}) {
     <AosComponents >
 
       <div className={styles.MatchItem} >
-            <Typography variant="h6" component="h6" pl={8} className={styles.h6Date}>
+            <Typography variant="h6" component="h6" className={styles.h6Date}>
               {newDateArg(match.utcDate)} hs
             </Typography>
             <Typography variant="h5" component="h5" className={styles.h5Home}>

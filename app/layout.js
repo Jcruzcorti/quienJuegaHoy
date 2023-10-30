@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'quienJuegaHoy',
-  description: 'Calendario de fútbol',
+  description: 'Agenda de fútbol',
 }
 
 export default function RootLayout({ children }) {

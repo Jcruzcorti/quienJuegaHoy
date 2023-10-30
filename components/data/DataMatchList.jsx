@@ -24,8 +24,6 @@ function DataMatchList({newData}) {
         ))
           :emptyData
         }
-
-        {/* {JSON.stringify(newData)} */}
       </div>    
     </>
   )
