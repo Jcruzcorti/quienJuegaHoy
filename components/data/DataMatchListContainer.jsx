@@ -18,7 +18,7 @@ async function getData() {
 
 
 
-    const res = await fetch('https://api.football-data.org/v4/matches?matchday=',{
+    const res = await fetch('http://api.football-data.org/v4/matches/',{
       headers: {
         "X-Auth-token": process.env.REACT_APP_PROYECT_API_ID
       }
