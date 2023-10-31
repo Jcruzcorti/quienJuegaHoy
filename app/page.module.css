@@ -19,6 +19,28 @@
 
 .tittle{
   padding-bottom: 50px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.hourTittle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.emptyMatchText{
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-left: 0;
+  color:#000000
 }
 
 .MatchContainer{
@@ -57,12 +79,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
     font-size: 1.8rem;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
     color:#000000
   }
 
+  .hourTittle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
   .emptyMatchText{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 500;
     font-size: 1rem;
     padding-left: 0;
     color:#000000

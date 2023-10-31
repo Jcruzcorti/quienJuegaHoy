@@ -1,20 +1,22 @@
 import React from 'react'
 import styles from '../../app/page.module.css'
-import { Typography } from '@mui/material'
 import DataMatchItemTomorrow from './DataMatchItemTomorrow'
 
 
 
 function DataMatchListTomorrow({newData}) {
 
-   const emptyData = <Typography variant="h5" component="h5" pl={8} className={styles.emptyMatchText}>
+   const emptyData = <h4 className={styles.emptyMatchText}>
                       No hay partidos disponibles mañana
-                    </Typography>
+                    </h4>
   return (
     <>
-      <Typography variant="h3" component="h3" className={styles.tittle}>
+      <h1 className={styles.tittle}>
         ¿QUIEN JUEGA MAÑANA?
-      </Typography> 
+      </h1> 
+      <h3  className={styles.hourTittle}>
+        HORARIO ARGENTINA
+      </h3>
      
      <div className={styles.MatchContainer}>
         {
@@ -28,7 +30,6 @@ function DataMatchListTomorrow({newData}) {
         }
 
       </div>
-    
     </>
   )
 }

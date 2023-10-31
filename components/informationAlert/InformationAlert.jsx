@@ -51,9 +51,6 @@ export default function InformationAlert() {
                 Los partidos disponibles corresponden a la primera división de Inglaterra, Italia, España, Alemania, Francia, Portugal y Brasil. Además, partidos del mundial, Champions League y Eurocopa
             </Typography>
           </DialogContentText>
-            <Typography variant="button" size="small">
-               HORARIO ARG
-            </Typography>
         </DialogContent>
         <DialogActions>
 
