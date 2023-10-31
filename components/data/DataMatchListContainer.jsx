@@ -1,13 +1,24 @@
 import DataMatchList from "./DataMatchList"
-
+import { format, addDays } from 'date-fns';
 
 async function getData() {
 
-    const res = await fetch('http://api.football-data.org/v4/matches/',{
-      headers: {
-        "X-Auth-token": process.env.REACT_APP_PROYECT_API_ID
-      }
-    })
+
+  const dateToday = addDays(new Date(), 0);
+  const newDateToday = format(dateToday, 'yyyy-MM-dd');
+
+  const res = await fetch(`https://api.football-data.org/v4/matches?date=${newDateToday}`, {
+    headers: {
+      'X-Auth-Token': process.env.REACT_APP_PROYECT_API_ID
+    }
+  });
+
+
+    // const res = await fetch('http://api.football-data.org/v4/matches/',{
+    //   headers: {
+    //     "X-Auth-token": process.env.REACT_APP_PROYECT_API_ID
+    //   }
+    // })
     // PL,EC,CL,FL1,BL1,SA,PPL,PD,WC
    
     if (!res.ok) {
