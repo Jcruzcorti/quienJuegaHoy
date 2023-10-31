@@ -1,13 +1,13 @@
 import DataMatchList from "./DataMatchList"
-import { format, addDays } from 'date-fns';
 
 async function getData() {
 
+  const newDateToday = new Date();
+  newDateToday.setDate(newDateToday.getDate());
+  const dateISOToday = newDateToday.toISOString().split('T')[0];
 
-  const dateToday = addDays(new Date(), 0);
-  const newDateToday = format(dateToday, 'yyyy-MM-dd');
 
-  const res = await fetch(`https://api.football-data.org/v4/matches?date=${newDateToday}`, {
+  const res = await fetch(`https://api.football-data.org/v4/matches?date=${dateISOToday}`, {
     headers: {
       'X-Auth-Token': process.env.REACT_APP_PROYECT_API_ID
     }
