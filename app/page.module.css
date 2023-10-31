@@ -13,7 +13,8 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding-top: 50px;
+  padding: 4rem 0;
+  
 }
 
 .tittle{
@@ -48,6 +49,7 @@
 
   .main {
     gap: 5px;    
+    
   }
 
   .tittle{
@@ -57,20 +59,24 @@
     align-items: center;
     font-size: 1.8rem;
     padding-bottom: 20px;
+    color:#000000
   }
 
   .emptyMatchText{
     font-size: 1rem;
     padding-left: 0;
+    color:#000000
   }
 
   .h6Date{
   font-size: 1rem;
   padding-left: 1rem;
+  color:#000000
   }
   
   .h5Home,.h6Vs,.h5Away{
   font-size: 1rem;
+  color:#000000
   }
   
 }
