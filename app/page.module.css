@@ -71,6 +71,7 @@
 
   .main {
     gap: 5px;    
+    min-height: 50vh;
     
   }
 
@@ -94,6 +95,7 @@
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     font-weight: 500;
     font-size: 0.8rem;
+    color:#000000
   }
 
   .emptyMatchText{

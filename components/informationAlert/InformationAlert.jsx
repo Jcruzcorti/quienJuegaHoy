@@ -48,7 +48,7 @@ export default function InformationAlert() {
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
             <Typography variant="subtitle" gutterBottom color='#828282'>
-                Los partidos disponibles corresponden a la primera división de Inglaterra, Italia, España, Alemania, Francia, Portugal y Brasil. Además, partidos del mundial, Champions League y Eurocopa
+                Los partidos disponibles corresponden a la primera división de Inglaterra, Italia, España, Alemania, Francia, Portugal y Brasil. Además, partidos del mundial, Champions League y Eurocopa.
             </Typography>
           </DialogContentText>
         </DialogContent>
