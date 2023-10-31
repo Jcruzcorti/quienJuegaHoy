@@ -1,8 +1,16 @@
-import { format } from 'date-fns';
-import { es } from 'date-fns/locale';
-
 
 export const newDateArg = (fechaUTC) => {
-  const fechaArgentina = new Date(fechaUTC);
-  return format(fechaArgentina, " HH:mm", { locale: es });
+  const dateArgentina = new Date(fechaUTC);
+
+  const hours = dateArgentina.getUTCHours() - 3; 
+  const minutes = dateArgentina.getUTCMinutes();
+
+  const newDateArg = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+
+  return newDateArg;
 };
+
+
+
+
+
