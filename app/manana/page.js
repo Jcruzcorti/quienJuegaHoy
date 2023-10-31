@@ -5,7 +5,6 @@ import InformationAlert from '@/components/informationAlert/InformationAlert';
 import DataMatchListContainerTomorrow from '@/components/dataTomorrow/DataMatchListContainerTomorrow';
 
 function MatchTomorrow() {
-
   
   return (
     <>        
