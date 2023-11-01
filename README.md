@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to Quien Juega Hoy!
 
-## Getting Started
+The project consists in the development of a web app to show football matches of the current and next day, that's why the name Quien Juega Hoy
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project details:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project is developed with technologies such as JavaScript, Next.js, Material UI, and consuming the Football-data.org API 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+It consists of 2 sections, the first one is the Home section where the football matches of today's leagues detailed in button + with important information are rendered. The second one, shows tomorrow's matches with corresponding schedules. In both sections you can navigate from two buttons at the top of the app, to see the matches by clicking on the HOY button and on the MAÑANA button. It is important to clarify that all matches correspond to the schedule in Argentina
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Steps to view the site:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In our default terminal, we clone the folder by typing "git clone" + link:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1- git clone https://github.com/Jcruzcorti/quienJuegaHoy
 
-## Deploy on Vercel
+2- Then, we place ourselves in the root folder of the project, with the command "cd quienjuegahoy" and install all the dependencies inside with the command "npm install".
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3-Finally, in the terminal we carry out the command "npm run dev" or "yarn dev" and the web will open in the predetermined browser after a few seconds/minutes of waiting.
