@@ -1,46 +1,31 @@
 import DataMatchList from "./DataMatchList"
 
-async function getData() {
-
-  const newDateToday = new Date();
-  newDateToday.setDate(newDateToday.getDate());
-  const dateISOToday = newDateToday.toISOString().split('T')[0];
 
 
-  const res = await fetch(`https://api.football-data.org/v4/matches?date=${dateISOToday}`, {
+export default async function DataMatchListContainer() {
+
+  // const newDateToday = new Date();
+  // newDateToday.setDate(newDateToday.getDate());
+  // const dateISOToday = newDateToday.toISOString().split('T')[0];
+
+  const res = await fetch(`https://api.football-data.org/v4/matches`, {
     headers: {
       'X-Auth-Token': process.env.REACT_APP_PROYECT_API_ID
     }
   });
 
-
-    // const res = await fetch('http://api.football-data.org/v4/matches/',{
-    //   headers: {
-    //     "X-Auth-token": process.env.REACT_APP_PROYECT_API_ID
-    //   }
-    // })
-    // PL,EC,CL,FL1,BL1,SA,PPL,PD,WC
-   
-    if (!res.ok) {
-      throw new Error('Failed to fetch data')
-    }
-   
-    return res.json()
+  if (!res.ok) {
+    throw new Error('Failed to fetch data');
   }
-   
-  export default async function DataMatchListContainer() {
 
+  const data = await res.json();
 
-    const data = await getData()
+  const leagues = [2021, 2001, 2015, 2002, 2019, 2014, 2013, 2000, 2017, 2018];
+  const filteredMatch = data.matches.filter(match => leagues.includes(match.competition.id));
 
-      const leagues = [2021, 2001, 2015, 2002, 2019, 2014,2013, 2000, 2017, 2018]; 
-      const filteredMatch = data.matches.filter(match => leagues.includes(match.competition.id));     
-
-    const newData = filteredMatch
-   
-    return (
-        <>
-            <DataMatchList newData={newData}/>
-        </>
-    ) 
-  }
+  return (
+    <>
+      <DataMatchList newData={filteredMatch} />
+    </>
+  );
+}
