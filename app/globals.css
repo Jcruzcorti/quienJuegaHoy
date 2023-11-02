@@ -7,11 +7,12 @@
 
 html,
 body {
-  min-height: 100vh; 
+  /* min-height: 100vh;  */
   scroll-behavior:smooth; 
 }
 
 body {
+  min-height: 100vh; 
     background: 
       linear-gradient(
         to top,

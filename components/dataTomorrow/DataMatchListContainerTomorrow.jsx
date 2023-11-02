@@ -1,4 +1,3 @@
-import DataMatchListContainer from "../data/DataMatchListContainer";
 import DataMatchListTomorrow from "./DataMatchListTomorrow";
 
 
@@ -9,8 +8,9 @@ import DataMatchListTomorrow from "./DataMatchListTomorrow";
     newDateTomorrow.setDate(newDateTomorrow.getDate() + 1);
     const dateISOTomorrow = newDateTomorrow.toISOString().split('T')[0];
   
-    const res = await fetch(`https://api.football-data.org/v4/matches?date=${dateISOTomorrow}`, {
-      headers: {
+    const res = await fetch(`https://api.football-data.org/v4/matches?date=${dateISOTomorrow}`, 
+    {cache: 'no-store',  
+    headers: {
         'X-Auth-Token': process.env.REACT_APP_PROYECT_API_ID
       }
     });
