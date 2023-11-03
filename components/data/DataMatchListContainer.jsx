@@ -13,7 +13,7 @@ export default async function DataMatchListContainer() {
 
 
   const res = await fetch(`https://api.football-data.org/v4/matches?date=${dateISOToday}`, {
-    next: { revalidate: 10 },
+    cache: 'no-store',
     headers: {
       'X-Auth-Token': process.env.REACT_APP_PROYECT_API_ID
     }
