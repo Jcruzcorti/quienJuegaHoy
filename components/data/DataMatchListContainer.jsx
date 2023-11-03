@@ -108,6 +108,7 @@ import DataMatchList from "./DataMatchList"
 
 
 async function getData() {
+
   const newDateToday = new Date();
   const dateISOToday = newDateToday.toISOString().split('T')[0];
 
@@ -147,6 +148,8 @@ async function getData() {
 
 
   return partidosHoy
+
+  // return res.json()
 }
  
 
