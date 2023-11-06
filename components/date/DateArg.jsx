@@ -14,6 +14,15 @@ export const newDateArg = (fechaUTC) => {
 
 
 
+//   import { utcToZonedTime } from 'date-fns-tz';
+
+// // ...
+
+// const dateArgentina = utcToZonedTime(new Date(fechaUTC), 'America/Argentina/Buenos_Aires');
+
+// // ...
+
+
 // export const newDateArg = (fechaUTC) => {
 //   const fechaArgentina = new Date(fechaUTC);
 //   const offsetArgentina = -3; // UTC-3 para Argentina
