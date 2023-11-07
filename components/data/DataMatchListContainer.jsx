@@ -8,7 +8,7 @@ async function getData() {
   // newDateToday.setDate(newDateToday.getDate() - 1);
   const dateISOToday = newDateToday.toISOString().split('T')[0];
   
-
+  // https://api.football-data.org/v4/matches?/dateFrom=${dateISOToday}/dateTo=${dateISOTomorrow}
   const res = await fetch(`https://api.football-data.org/v4/matches?date=${dateISOToday}`, {
     cache: 'no-store',
     headers: {

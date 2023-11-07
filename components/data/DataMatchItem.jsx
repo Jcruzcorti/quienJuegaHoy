@@ -19,6 +19,13 @@ function DataMatchItem({match}) {
       return dateArgentina
     }
 
+  // const newDateArg = () => {
+  //   const fechaEnUTC = new Date(match.utcDate); 
+  //   const fechaFormateada = fechaEnUTC.toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' });
+  //   return fechaFormateada
+  // }
+
+
   return (
     <AosComponents >
       <div className={styles.MatchItem} >
