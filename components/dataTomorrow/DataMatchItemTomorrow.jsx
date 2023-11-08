@@ -11,22 +11,6 @@ import { Typography } from '@mui/material';
 function DataMatchItemTomorrow({match}) {
 
 
-  // const newDateArg = () => {
-  //   const dateArgentina= new Date (match.utcDate).toLocaleTimeString('es-AR', {
-  //     hour: '2-digit',
-  //     minute: '2-digit',
-  //   });
-  //   return dateArgentina
-  // }
-
-  // const newDateArg = () => {
-  //   const fechaEnUTC = new Date(match.utcDate); 
-  //   const fechaFormateada = fechaEnUTC.toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' });
-
-  //   return fechaFormateada
-  // }
-
-
   return (
     <AosComponents >
       <div className={styles.MatchItem} >

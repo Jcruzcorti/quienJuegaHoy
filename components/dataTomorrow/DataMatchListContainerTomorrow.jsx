@@ -7,9 +7,6 @@ async function getData() {
   newDateTomorrow.setDate(newDateTomorrow.getDate() +1);
   const dateISOTomorrow = newDateTomorrow.toISOString().split('T')[0];
 
-  // const tomorrow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
-  // const dateISOTomorrow = tomorrow.toISOString().split('T')[0];
-
   const res = await fetch(`https://api.football-data.org/v4/matches?date=${dateISOTomorrow}`, {
     cache: 'no-store',
     headers: {
@@ -24,7 +21,6 @@ async function getData() {
 
   const data = await res.json()
 
-
   const tomorrowMatches = data.matches.filter(match => {
     const dateMatch = new Date(match.utcDate);
     dateMatch.setHours(dateMatch.getHours() - 3); 
@@ -37,7 +33,6 @@ async function getData() {
   });
 
   return tomorrowMatches
-  // return data
 }
  
 

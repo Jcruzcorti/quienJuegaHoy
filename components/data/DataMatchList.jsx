@@ -18,7 +18,7 @@ function DataMatchList({newData}) {
         </h3>
       <div className={styles.MatchContainer}>    
         {
-          newData
+          newData && newData.length > 0
           ?newData.map((match)=>(
             <div key={match.id} >
               <DataMatchItem match={match}/>

@@ -20,7 +20,7 @@ function DataMatchListTomorrow({newData}) {
      
      <div className={styles.MatchContainer}>
         {
-          newData
+          newData && newData.length > 0
           ?newData.map((match)=>(
             <div key={match.id} >
               <DataMatchItemTomorrow match={match}/>
@@ -28,7 +28,6 @@ function DataMatchListTomorrow({newData}) {
         ))
           :emptyData
         }
-        {/* {JSON.stringify(newData)} */}
       </div>
     </>
   )
